@@ -1,0 +1,25 @@
+redis:
+  image: redis
+
+db:
+  image: postgres:9.4
+
+vote:
+  image: dockersamples/vote
+  ports:
+    - 5000:80
+  links:
+    - redis
+
+result:
+  image: dockersamples/result
+  ports:
+    - 5001:80
+  links:
+    - db
+
+worker:
+  image: dockersamples/worker
+  links: 
+    - redis
+    - db  

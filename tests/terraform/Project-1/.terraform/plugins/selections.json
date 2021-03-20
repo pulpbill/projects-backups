@@ -1,0 +1,6 @@
+{
+  "registry.terraform.io/hashicorp/aws": {
+    "hash": "h1:xly49NpDRl3YBlNHH1M6zihuNgt4TIiDcHyEOf0TIw0=",
+    "version": "3.15.0"
+  }
+}
